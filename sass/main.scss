@@ -1,0 +1,24 @@
+
+
+// import functions and variables
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+// custom theme colors
+$custom-theme-colors: (
+  "altprimary": #012063,
+  "altlight": #DEE8FF
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.nav-link.text-altlight:hover {
+  color: #c2c2c2 !important;
+}
+
+.dropdown-menu {
+  border: 0 !important;
+}
